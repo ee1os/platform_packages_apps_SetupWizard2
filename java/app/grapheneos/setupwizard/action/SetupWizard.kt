@@ -6,6 +6,7 @@ import android.app.StatusBarManager
 import android.content.Intent
 import android.os.UserManager
 import androidx.annotation.StyleRes
+import com.android.internal.widget.LockPatternUtils
 import com.google.android.setupcompat.partnerconfig.PartnerConfigHelper
 import com.google.android.setupcompat.util.WizardManagerHelper
 import com.google.android.setupdesign.R
@@ -115,5 +116,14 @@ object SetupWizard {
     }
     val isSecondaryUser: Boolean by lazy {
         !isPrimaryUser
+    }
+
+    // the protected space: a secondary user that manages the alternate credentials
+    val isProtectedSpace: Boolean by lazy {
+        isSecondaryUser && try {
+            LockPatternUtils(appContext).isAlternatesAuthority
+        } catch (e: RuntimeException) {
+            false
+        }
     }
 }

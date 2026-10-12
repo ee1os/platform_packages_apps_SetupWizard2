@@ -49,6 +49,7 @@ class WelcomeActivity : SetupWizardActivity(R.layout.activity_welcome) {
         letsSetupText = requireViewById(R.id.lets_setup_text)
         letsSetupText.setText(
             if (SetupWizard.isPrimaryUser) R.string.lets_setup_your_device
+            else if (SetupWizard.isProtectedSpace) R.string.lets_setup_your_protected_space
             else R.string.lets_setup_your_profile
         )
         secondaryButton.setText(this, R.string.emergency_call)

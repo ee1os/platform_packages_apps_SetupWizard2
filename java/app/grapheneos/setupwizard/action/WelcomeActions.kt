@@ -2,6 +2,7 @@ package app.grapheneos.setupwizard.action
 
 import android.app.Activity
 import android.app.AlertDialog
+import android.app.WallpaperManager
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Build
@@ -10,6 +11,7 @@ import android.service.oemlock.OemLockManager
 import android.telecom.TelecomManager
 import android.telephony.TelephonyManager
 import android.util.Log
+import java.io.IOException
 import android.widget.ArrayAdapter
 import app.grapheneos.setupwizard.APPLY_SIM_LANGUAGE_ON_ENTRY
 import app.grapheneos.setupwizard.R
@@ -27,6 +29,7 @@ object WelcomeActions {
     private const val ACTION_ACCESSIBILITY = "android.settings.ACCESSIBILITY_SETTINGS_FOR_SUW"
     private const val REBOOT_REASON_BOOTLOADER = "bootloader"
     private var simLocaleApplied = false
+    private var protectedWallpaperSet = false
 
     init {
         refreshCurrentLocale()
@@ -38,6 +41,23 @@ object WelcomeActions {
         SetupWizard.setStatusBarHidden(true)
         SystemBarHelper.setBackButtonVisible(context.window, false)
         if (APPLY_SIM_LANGUAGE_ON_ENTRY) applySimLocale()
+        if (SetupWizard.isProtectedSpace) setProtectedWallpaper()
+    }
+
+    // the protected space gets its own wallpaper, which also gives it its own system colors
+    private fun setProtectedWallpaper() {
+        if (protectedWallpaperSet) return
+        protectedWallpaperSet = true
+        Thread {
+            try {
+                appContext.getSystemService(WallpaperManager::class.java)!!.setResource(
+                    R.drawable.protected_wallpaper,
+                    WallpaperManager.FLAG_SYSTEM or WallpaperManager.FLAG_LOCK
+                )
+            } catch (e: IOException) {
+                Log.w(TAG, "setProtectedWallpaper failed", e)
+            }
+        }.start()
     }
 
     fun showLanguagePicker(activity: Activity) {
