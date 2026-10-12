@@ -12,13 +12,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
             style="@style/SudContentFrame"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:contentDescription="@string/grapheneos_icon"
-            android:src="@drawable/grapheneos_icon" />
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/grapheneos_icon"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="56sp" />
 
         <LinearLayout
             android:id="@+id/disable_oem_unlocking_container"
