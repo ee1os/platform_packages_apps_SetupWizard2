@@ -16,6 +16,7 @@ import app.grapheneos.setupwizard.view.activity.FinishActivity
 import app.grapheneos.setupwizard.view.activity.GesturesActivity
 import app.grapheneos.setupwizard.view.activity.LocationActivity
 import app.grapheneos.setupwizard.view.activity.MigrationActivity
+import app.grapheneos.setupwizard.view.activity.ProtectedSpaceActivity
 import app.grapheneos.setupwizard.view.activity.SecurityActivity
 import app.grapheneos.setupwizard.view.activity.SetupWizardActivity
 import app.grapheneos.setupwizard.view.activity.UpdaterSecurityPreviewActivity
@@ -33,6 +34,7 @@ object SetupWizard {
         DateTimeActivity::class.java,
         LocationActivity::class.java,
         SecurityActivity::class.java,
+        ProtectedSpaceActivity::class.java,
         UpdaterSecurityPreviewActivity::class.java,
         MigrationActivity::class.java,
         GesturesActivity::class.java,
