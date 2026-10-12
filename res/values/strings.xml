@@ -2,9 +2,9 @@
     <string name="app_name">SetupWizard</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
-    <string name="welcome_to_grapheneos">Welcome to ivan.gg</string>
-    <string name="grapheneos_icon" translatable="false">ivan.gg</string>
-    <string name="grapheneos_desc">A fork of GrapheneOS by ivan.gg (faeton). It adds a protected space opened by its own PIN from the same lock screen, and keeps GrapheneOS privacy and security underneath.</string>
+    <string name="welcome_to_grapheneos">Welcome to os.ivan.gg</string>
+    <string name="grapheneos_icon" translatable="false">os.ivan.gg</string>
+    <string name="grapheneos_desc">os.ivan.gg is a fork of GrapheneOS by ivan.gg (faeton). It adds a protected space opened by its own PIN from the same lock screen, and keeps GrapheneOS privacy and security underneath.</string>
     <string name="lets_setup_your_device">Let\'s set up your device in a few steps.</string>
     <string name="lets_setup_your_protected_space">This is your protected space. It opens with its own PIN from the lock screen, and a shield in the status bar shows when you are in it. These steps run only the first time.</string>
     <string name="lets_setup_your_profile">Let\'s set up your user profile in a few steps.</string>
