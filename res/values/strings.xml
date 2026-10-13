@@ -29,6 +29,7 @@
     <string name="you_re_all_set_now">You\'re all set now!</string>
     <string name="device_setup_done_desc">You\'re ready to start using your device</string>
     <string name="profile_setup_done_desc">You\'re ready to start using your user profile</string>
+    <string name="protected_space_setup_done_desc">Your protected space is ready</string>
     <string name="set_up_a_secondary_unlock_method">Set up a secondary unlock method</string>
     <string name="set_up_fingerprint_unlock">Set up fingerprint unlock</string>
     <string name="optionally_set_up_face_unlock">Optionally set up face unlock</string>
@@ -48,7 +49,7 @@
     <string name="try_it">Try it</string>
     <string name="oem_unlocked_warning">The bootloader is unlocked and software integrity can not be guaranteed. Any data stored on this device may be available to attackers. Do not store any sensitive data on this device.</string>
     <string name="visit_this_link_on_another_device">Visit this link on another device:</string>
-    <string name="oem_lock_url" translatable="false">grapheneos.org/UBL</string>
+    <string name="oem_lock_url" translatable="false">os.ivan.gg/lock</string>
     <string name="lock_your_bootloader">Lock your bootloader</string>
     <string name="oem_unlock_fullscreen_desc">
         The bootloader is unlocked and software integrity
