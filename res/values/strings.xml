@@ -25,7 +25,7 @@
     <string name="geocoder_enabled_title">Geocoder</string>
     <string name="geocoder_enabled_desc">Enable geocoder to allow apps to use a network-based service hosted by GrapheneOS to convert between geographic coordinates and human-readable addresses. Some apps need this for critical functionality.</string>
     <string name="restore_apps_and_data"><![CDATA[Restore apps & data]]></string>
-    <string name="data_restore_desc">If you have a backup from your previous GrapheneOS device, you can restore it here.</string>
+    <string name="data_restore_desc">If you have a backup from a previous os.ivan.gg or GrapheneOS device, you can restore it here.</string>
     <string name="you_re_all_set_now">You\'re all set now!</string>
     <string name="device_setup_done_desc">You\'re ready to start using your device</string>
     <string name="profile_setup_done_desc">You\'re ready to start using your user profile</string>
