@@ -2,9 +2,9 @@
     <string name="app_name">SetupWizard</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
-    <string name="welcome_to_grapheneos">Welcome to os.ivan.gg</string>
-    <string name="grapheneos_icon" translatable="false">os.ivan.gg</string>
-    <string name="grapheneos_desc">os.ivan.gg is a fork of GrapheneOS by ivan.gg (faeton). It adds a protected space opened by its own PIN from the same lock screen, and keeps GrapheneOS privacy and security underneath.</string>
+    <string name="welcome_to_grapheneos">Welcome to ee1os</string>
+    <string name="grapheneos_icon" translatable="false">ee1os</string>
+    <string name="grapheneos_desc">ee1os (two environments, one OS) is a fork of GrapheneOS by ivan.gg (faeton). It adds a protected space opened by its own PIN from the same lock screen, and keeps GrapheneOS privacy and security underneath.</string>
     <string name="lets_setup_your_device">Let\'s set up your device in a few steps.</string>
     <string name="lets_setup_your_protected_space">This is your protected space. It opens with its own PIN from the lock screen, and a shield in the status bar shows when you are in it. These steps run only the first time.</string>
     <string name="lets_setup_your_profile">Let\'s set up your user profile in a few steps.</string>
@@ -25,7 +25,7 @@
     <string name="geocoder_enabled_title">Geocoder</string>
     <string name="geocoder_enabled_desc">Enable geocoder to allow apps to use a network-based service hosted by GrapheneOS to convert between geographic coordinates and human-readable addresses. Some apps need this for critical functionality.</string>
     <string name="restore_apps_and_data"><![CDATA[Restore apps & data]]></string>
-    <string name="data_restore_desc">If you have a backup from a previous os.ivan.gg or GrapheneOS device, you can restore it here.</string>
+    <string name="data_restore_desc">If you have a backup from a previous ee1os or GrapheneOS device, you can restore it here.</string>
     <string name="you_re_all_set_now">You\'re all set now!</string>
     <string name="device_setup_done_desc">You\'re ready to start using your device</string>
     <string name="profile_setup_done_desc">You\'re ready to start using your user profile</string>
@@ -49,7 +49,7 @@
     <string name="try_it">Try it</string>
     <string name="oem_unlocked_warning">The bootloader is unlocked and software integrity can not be guaranteed. Any data stored on this device may be available to attackers. Do not store any sensitive data on this device.</string>
     <string name="visit_this_link_on_another_device">Visit this link on another device:</string>
-    <string name="oem_lock_url" translatable="false">os.ivan.gg/lock</string>
+    <string name="oem_lock_url" translatable="false">ee1os.com/lock</string>
     <string name="lock_your_bootloader">Lock your bootloader</string>
     <string name="oem_unlock_fullscreen_desc">
         The bootloader is unlocked and software integrity
